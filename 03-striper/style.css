@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background: hsl(210, 36%, 96%);
+    ;
+}
+.container{
+    width: 80vw;
+    max-width: 620px;
+}
+.title{
+    font-weight: 2rem;
+    font-weight: 900;
+    color: cadetblue;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.underline{
+    
+    height: 4px;
+    width: 4rem;
+    background-color: cadetblue;
+    margin: 0.5rem auto;
+}
+/*  */
+.review{
+    background: #fff;
+    width: 406px;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+.img-container {
+       position: relative;
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       margin: 0 auto;
+       margin-bottom: 1.5rem;
+       object-fit: cover;
+}
+#person-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+
+}
+.img-container::before {
+    content: "";
+    top: -0.25rem;
+    right: -0.5rem;
+    background: chartreuse;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.img-container i{
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        transform: translateY(25%);
+        background: chartreuse;
+        color: #fff;
+}
+
+ #author{
+    margin-bottom: 0.25rem;
+    font-size:0.875rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+#job{
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: cornflowerblue;
+        font-family: 'Open Sans Condensed',
+        sans-serif;
+    font-size: 0.9rem;
+}
+#info{
+    margin-bottom: 0.75rem;
+     font-family: 'Open Sans Condensed',sans-serif;
+       line-height: 1.5;
+       font-size: 1rem;
+       letter-spacing: 1px;
+       font-weight: 600;
+       color: hsl(210, 22%, 49%);
+       
+}
+
+
+/*  */
+.button-container{
+
+}
+.prev-button, 
+.next-button{
+    color: cornflowerblue;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem 0.5rem;
+    transition: all 0.3s linear ;
+    cursor: pointer;
+}
+.prev-button:hover,
+.next-button:hover {
+    color: rgb(49, 113, 233);
+}
+.random-button{
+    background: transparent;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin:  0.5rem 0;
+
+    color: cornflowerblue;
+    padding: 4px 12px;
+     text-transform: capitalize;
+     transition: all 0.3s linear;
+}
+.random-button:hover{
+     color: #fff;
+     background:cornflowerblue;
+}
